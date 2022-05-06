@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="POST" enctype="multipart/form-data" >
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="form-control-label" for="input-address">Name</label>
+                <input id="input-address" class="form-control form-control-alternative" name="name" placeholder="Type Here ..." type="text">
+              </div>
+            </div>
+          </div>
+
+        
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-address">Profile Photo</label>
+                  
+                    <label for="file">Select a file:</label>
+                    <input type="file" name ="photo" ><br><br>
+              
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-address">Aadhar Card</label>
+                    
+                      <label for="file">Select a file:</label>
+                      <input type="file" name ="ac" ><br><br>
+                
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-address">Pan Card</label>
+                    
+                      <label for="file">Select a file:</label>
+                      <input type="file" name ="pc" ><br><br>
+                
+                  </div>
+                </div>
+              </div>
+
+            <label for="files">Monthly Salary Slips:</label>
+            <input type="file" id="files" name="files" multiple><br><br>
+
+
+            <div class="form-group">
+              <label>Name</label>
+              <textarea rows="4" class="form-control form-control-alternative" name="p_interests" name="p_interests"  placeholder="Type Here ..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Past Debt</label>
+              <textarea rows="4" class="form-control form-control-alternative" name="p_hobbies" placeholder="Type Here ..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Loan Type</label>
+              <textarea rows="4" class="form-control form-control-alternative"  name="interests" placeholder="Type Here ... "></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Monthly Income</label>
+              <textarea rows="4" class="form-control form-control-alternative" name="h_hobbies" placeholder="Type Here ..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Challenges</label>
+              <textarea rows="4" class="form-control form-control-alternative" name="challenges"  placeholder="Type Here ..."></textarea>
+            </div>
+
+
+            <div class="col-4 text-left">
+                       
+                <input type="submit" class="btn btn-sm btn-primary" value="Submit" />
+          
+               </div>
+        
+</body>
+</html>
