@@ -25,9 +25,13 @@ th {
 </head>
 <body>
 
+  <h2>HTML Table</h2>
 
-<h2>HTML Table</h2>
+{% if c_score < 700 %}
 
+<p>Not Eligible for Personal Loan</p>
+   
+{% else %}
 <table>
   <tr>
     <th>
@@ -56,6 +60,17 @@ th {
  
   </tr>
 </table>
+
+<div class="form-group">
+  <a href="/apply">
+  <button type="submit" class="btn btn-primary my-4">Apply for Personal Loan Now</button>
+</a>
+</div>
+
+{% endif %}
+
+
+
 
 </body>
 </html>

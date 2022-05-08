@@ -1,107 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="/submit" method="POST" enctype="multipart/form-data" >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        PRODUCT INFO
+    </title>
+    <!-- Favicon -->
 
+    <link href="{{ url_for('static', filename='img/brand/favicon.png') }}" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+
+    <link href="{{ url_for('static', filename='js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="{{ url_for('static', filename='css/argon-dashboard.css') }}" rel="stylesheet" />
+
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/32.0.0/classic/ckeditor.js"></script>
+</head>
+
+<body class="">
+
+    <div class="main-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="index.html">
+                    PRODUCT INFO
+                </a>
+
+<p>Hello You have Logged in as {{ email }}</p>
+
+
+                <!-- Form -->
+
+                <!-- User -->
+
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <!-- Header -->
+        <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+            <div class="container-fluid">
+                <div class="header-body">
+                    <!-- Card stats -->
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt--7">
+            <!-- Form -->
+            <div class="row">
+
+                <div class="col-xl-12 order-xl-1">
+
+                    <div class="card bg-secondary shadow">
+
+                        <div class="card-header bg-white border-0">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h3 class="mb-0">Enter Details</h3>
+                                </div>
+                                <div class="col-4 text-right">
+
+                                </div>
+                            </div>
+                        </div>
+                    
+    <div class="card-body">
+
+      <form action="/submit" method="POST" enctype="multipart/form-data" >
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="form-control-label" for="input-address">Name</label>
+              <input id="input-address" class="form-control form-control-alternative" name="name" placeholder="Type Here ..." type="text">
+            </div>
+          </div>
+        </div>
+
+      
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
-                <label class="form-control-label" for="input-address">Name</label>
-                <input id="input-address" class="form-control form-control-alternative" name="name" placeholder="Type Here ..." type="text">
+                <label class="form-control-label" for="input-address">Profile Photo</label>
+                <br><br>
+                  
+                  <input type="file" name ="photo" ><br>
+            
               </div>
             </div>
           </div>
 
-        
-            <div class="row">
+          <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label class="form-control-label" for="input-address">Profile Photo</label>
+                  <label class="form-control-label" for="input-address">Aadhar Card</label>
+                  <br><br>
                   
-                    <label for="file">Select a file:</label>
-                    <input type="file" name ="photo" ><br><br>
+                    <input type="file" name ="ac" ><br>
               
                 </div>
               </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-address">Aadhar Card</label>
-                    
-                      <label for="file">Select a file:</label>
-                      <input type="file" name ="ac" ><br><br>
-                
-                  </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-address">Pan Card</label>
+                  <br><br>
+                  
+                    <input type="file" name ="pc" ><br>
+              
                 </div>
               </div>
+            </div>
 
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-address">Pan Card</label>
-                    
-                      <label for="file">Select a file:</label>
-                      <input type="file" name ="pc" ><br><br>
-                
-                  </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-address">Monthly Salary Slips:</label>
+                  <br><br>
+                  
+                    <input type="file" id="files" name="files" multiple><br>
+              
                 </div>
               </div>
-
-            <label for="files">Monthly Salary Slips:</label>
-            <input type="file" id="files" name="files" multiple><br><br>
-
-            <div class="form-group">
-              <label>Past Debt (Cleared)</label>
-              <input type="radio" id="yes" name="debt" value="Yes">
-               <label for="yes">Yes</label><br>
-               <input type="radio" id="no" name="debt" value="No">
-               <label for="no">No</label><br>
             </div>
 
-            <div class="form-group">
-              <label>Loan Type</label>
-              <input type="radio" id="sec" name="loan" value="Secured">
-               <label for="sec">Secured</label><br>
-               <input type="radio" id="unsec" name="loan" value="Unsecured">
-               <label for="unsec">Unsecured</label><br>
-            </div>
-
-            <div class="form-group">
-              <label>Monthly Income</label>
-              <input type="radio" id="1" name="income" value="Less than 15,000 INR">
-              <label for="1">Less than 15,000 INR</label><br>
-              <input type="radio" id="2" name="income" value="15,000 - 20,000 INR">
-              <label for="2">15,000 - 20,000 INR</label><br>
-              <input type="radio" id="3" name="income" value="20,000 - 25,000 INR">
-              <label for="3">20,000 - 25,000 INR</label><br>
-            </div>
-
-            <div class="form-group">
-              <label>Primary Source Of Income</label>
-              <input type="radio" id="a" name="source" value="Salaried Employees">
-              <label for="a">Salaried Employee</label><br>
-              <input type="radio" id="b" name="source" value="Unsecured">
-              <label for="b">Self-Employed Individual</label><br>
-              <input type="radio" id="c" name="source" value="NRI Applicant">
-              <label for="c">NRI Applicant</label><br>
-              <input type="radio" id="d" name="source" value="Pensioners">
-              <label for="d">Pensioners</label><br>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-address">Past Debt (Cleared)</label>
+            <br><br>
+            <input type="radio" id="yes" name="debt" value="Yes">
+             <label for="yes">Yes</label><br>
+             <input type="radio" id="no" name="debt" value="No">
+             <label for="no">No</label><br>
+          </div>
+              </div>
             </div>
 
 
-            <div class="col-4 text-left">
-                       
-                <input type="submit" class="btn btn-sm btn-primary" value="Submit" />
-          
-               </div>
-        
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-address">Loan Type</label>
+            <br><br>
+            <input type="radio" id="sec" name="loan" value="Secured">
+             <label for="sec">Secured</label><br>
+             <input type="radio" id="unsec" name="loan" value="Unsecured">
+             <label for="unsec">Unsecured</label><br>
+          </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-address">Monthly Income</label>
+            <br><br>
+            <input type="radio" id="1" name="income" value="Less than 15,000 INR">
+            <label for="1">Less than 15,000 INR</label><br>
+            <input type="radio" id="2" name="income" value="15,000 - 20,000 INR">
+            <label for="2">15,000 - 20,000 INR</label><br>
+            <input type="radio" id="3" name="income" value="20,000 - 25,000 INR">
+            <label for="3">20,000 - 25,000 INR</label><br>
+          </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-address">Primary Source Of Income</label>
+            <br><br>
+            <input type="radio" id="a" name="source" value="Salaried Employees">
+            <label for="a">Salaried Employee</label><br>
+            <input type="radio" id="b" name="source" value="Unsecured">
+            <label for="b">Self-Employed Individual</label><br>
+            <input type="radio" id="c" name="source" value="NRI Applicant">
+            <label for="c">NRI Applicant</label><br>
+            <input type="radio" id="d" name="source" value="Pensioners">
+            <label for="d">Pensioners</label><br>
+          </div>
+              </div></div>
+
+            <hr class="my-4" />
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary my-4">Submit</button>
+            </div>
+        </form>
+
+        <!-- <hr class="my-4" />
+        <div class="form-group" style="margin-top: -8rem; margin-left: 100rem;">
+            <a href="/view">
+            <button type="submit" class="btn btn-primary my-4">View All</button>
+        </a>
+        </div> -->
+
+    </div>
+</div>
+
+</div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+<div class="row align-items-center justify-content-xl-between">
+    <div class="col-xl-6">
+        <div class="copyright text-center text-xl-left text-muted">
+            &copy; 2022 <a href="#" class="font-weight-bold ml-1" target="_blank">
+                PRODUCT INFO
+            </a>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+
+        </ul>
+    </div>
+</div>
+</footer>
+</div>
+</div>
+
+<!--   Core   -->
+<script src="{{ url_for('static', filename='js/plugins/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+<!--   Optional JS   -->
+<!--   Argon JS   -->
+<script src="{{ url_for('static', filename='js/argon-dashboard.min.js') }}"></script>
+<script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+<script>
+window.TrackJS &&
+TrackJS.install({
+token: "ee6fab19c5a04ac1a32a645abde4613a",
+application: "argon-dashboard-free"
+});
+</script>
+
+
 </body>
+
 </html>

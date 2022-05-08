@@ -21,3 +21,7 @@ Business Loan	        Above 700
 Gold Loan	            Not Required
 
 - most banks and NBFCs limit a personal loan at Rs. 25 lakh to an individual.
+
+# todo:
+
+- multiple files not uploaded in static

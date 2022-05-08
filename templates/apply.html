@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        PRODUCT INFO
+    </title>
+    <!-- Favicon -->
+
+    <link href="{{ url_for('static', filename='img/brand/favicon.png') }}" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+
+    <link href="{{ url_for('static', filename='js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="{{ url_for('static', filename='css/argon-dashboard.css') }}" rel="stylesheet" />
+
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/32.0.0/classic/ckeditor.js"></script>
+    <style>
+      body{
+        overflow-x: hidden;
+      }
+    </style>
+</head>
+
+<body class="">
+
+    <div class="main-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="index.html">
+                    PRODUCT INFO
+                </a>
+                <!-- Form -->
+
+                <!-- User -->
+
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <!-- Header -->
+        <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+            <div class="container-fluid">
+                <div class="header-body">
+                    <!-- Card stats -->
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt--7">
+            <!-- Form -->
+            <div class="row">
+
+                <div class="col-xl-12 order-xl-1">
+
+                    <div class="card bg-secondary shadow">
+
+                        <div class="card-header bg-white border-0">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h3 class="mb-0">Enter Details</h3>
+                                </div>
+                                <div class="col-4 text-right">
+
+                                </div>
+                            </div>
+                        </div>
+                    
+    <div class="card-body">
+
+      <form action="/apply" method="POST" enctype="multipart/form-data" >
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="form-control-label" for="input-address">Name</label>
+              <input id="input-address" class="form-control form-control-alternative" name="name" placeholder="Type Here ..." type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="form-control-label" for="input-address">Loan Amount Required</label>
+                <input id="input-address" class="form-control form-control-alternative" name="amount" placeholder="Type Here ..." type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="form-control-label" for="input-address">Tenure</label>
+                <input id="input-address" class="form-control form-control-alternative" name="tenure" placeholder="Type Here ..." type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="form-control-label" for="input-address">Interest Rate</label>
+                <input id="input-address" class="form-control form-control-alternative" name="rate" placeholder="Type Here ..." type="text">
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+
+    </div>
+</div>
+
+<hr class="my-4" />
+<div class="form-group" style="margin-top: -2rem; margin-left: 100rem;">
+  <a href="/view">
+    <button type="submit" class="btn btn-primary my-4" >Request</button>
+  </a>
+</div>
+
+
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+<div class="row align-items-center justify-content-xl-between">
+    <div class="col-xl-6">
+        <div class="copyright text-center text-xl-left text-muted">
+            &copy; 2022 <a href="#" class="font-weight-bold ml-1" target="_blank">
+                PRODUCT INFO
+            </a>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+
+        </ul>
+    </div>
+</div>
+</footer>
+</div>
+</div>
+
+<!--   Core   -->
+<script src="{{ url_for('static', filename='js/plugins/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+<!--   Optional JS   -->
+<!--   Argon JS   -->
+<script src="{{ url_for('static', filename='js/argon-dashboard.min.js') }}"></script>
+<script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+<script>
+window.TrackJS &&
+TrackJS.install({
+token: "ee6fab19c5a04ac1a32a645abde4613a",
+application: "argon-dashboard-free"
+});
+</script>
+
+   
+<script>
+  $(document).ready(function() {
+  $('input[name="btn_submit"]').click(function() {
+      if ($("input[name='amount']").val() >= '40,00,000') {
+          alert('Can only avail upto 40 Lakhs');
+          return false;
+      }
+  });
+});
+</script>
+
+</body>
+
+</html>
+
+
+ 
+    
