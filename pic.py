@@ -35,24 +35,20 @@ def form():
 def get_details():
     if request.method == 'POST':
         name                    = request.values.get("name")
-    
-        # photo                   = request.values.get("photo") 
-        public_hobbies          = request.values.get("p_hobbies")
-        public_interests        = request.values.get("p_interests")
-        hidden_interests        = request.values.get("interests")
-        hidden_hobbies          = request.values.get("h_hobbies")
-        challenges              = request.values.get("challenges")
-
+        past_debt               = request.values.get("debt")
+        loan_type               = request.values.get("loan")
+        monthly_income          = request.values.get("income")
+        source_income           = request.values.get("source")
+     
         
         my_dict = {}
 
         my_dict ["Name"]                = name
-    
-        my_dict ["public_hobbies"]      = public_hobbies
-        my_dict ["public_interests"]    = public_interests
-        my_dict ["hidden_interests"]    = hidden_interests
-        my_dict ["hidden_hobbies"]      = hidden_hobbies
-        my_dict ["challenges"]          = challenges
+        my_dict ["past_debt"]           = past_debt 
+        my_dict ["loan_type"]           = loan_type
+        my_dict ["monthly_income"]      = monthly_income
+        my_dict ["source_income "]      = source_income 
+      
 
         uploaded_file           = request.files['photo']
         uploaded_file_1         = request.files['ac']
@@ -78,25 +74,19 @@ def get_details():
         if filename_1 != '':
             file_ext = os.path.splitext(filename_1)[1]
             uploaded_file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename_1))
-        image_1 = client.upload(file= 'static/' + filename_1) 
-        img_1 = image_1.url
-        my_dict ["ac"]               = img_1
+   
 
         filename_2 = secure_filename(uploaded_file_2.filename)
         if filename_2 != '':
             file_ext = os.path.splitext(filename_2)[1]
             uploaded_file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename_2))
-        image_2 = client.upload(file= 'static/' + filename_2) 
-        img_2 = image_2.url
-        my_dict ["pc"]               = img_2
+     
 
         filenames = secure_filename(uploaded_files.filename)
         if filenames != '':
             file_ext = os.path.splitext(filenames)[1]
             uploaded_file.save(os.path.join(app.config['UPLOAD_FOLDER'], filenames))
-        images = client.upload(file= 'static/' + filenames) 
-        imgs = images.url
-        my_dict ["files"]               = imgs
+
 
         upload_details(my_dict)
 

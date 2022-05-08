@@ -58,30 +58,42 @@
             <label for="files">Monthly Salary Slips:</label>
             <input type="file" id="files" name="files" multiple><br><br>
 
-
             <div class="form-group">
-              <label>Name</label>
-              <textarea rows="4" class="form-control form-control-alternative" name="p_interests" name="p_interests"  placeholder="Type Here ..."></textarea>
-            </div>
-
-            <div class="form-group">
-              <label>Past Debt</label>
-              <textarea rows="4" class="form-control form-control-alternative" name="p_hobbies" placeholder="Type Here ..."></textarea>
+              <label>Past Debt (Cleared)</label>
+              <input type="radio" id="yes" name="debt" value="Yes">
+               <label for="yes">Yes</label><br>
+               <input type="radio" id="no" name="debt" value="No">
+               <label for="no">No</label><br>
             </div>
 
             <div class="form-group">
               <label>Loan Type</label>
-              <textarea rows="4" class="form-control form-control-alternative"  name="interests" placeholder="Type Here ... "></textarea>
+              <input type="radio" id="sec" name="loan" value="Secured">
+               <label for="sec">Secured</label><br>
+               <input type="radio" id="unsec" name="loan" value="Unsecured">
+               <label for="unsec">Unsecured</label><br>
             </div>
 
             <div class="form-group">
               <label>Monthly Income</label>
-              <textarea rows="4" class="form-control form-control-alternative" name="h_hobbies" placeholder="Type Here ..."></textarea>
+              <input type="radio" id="1" name="income" value="Less than 15,000 INR">
+              <label for="1">Less than 15,000 INR</label><br>
+              <input type="radio" id="2" name="income" value="15,000 - 20,000 INR">
+              <label for="2">15,000 - 20,000 INR</label><br>
+              <input type="radio" id="3" name="income" value="20,000 - 25,000 INR">
+              <label for="3">20,000 - 25,000 INR</label><br>
             </div>
 
             <div class="form-group">
-              <label>Challenges</label>
-              <textarea rows="4" class="form-control form-control-alternative" name="challenges"  placeholder="Type Here ..."></textarea>
+              <label>Primary Source Of Income</label>
+              <input type="radio" id="a" name="source" value="Salaried Employees">
+              <label for="a">Salaried Employee</label><br>
+              <input type="radio" id="b" name="source" value="Unsecured">
+              <label for="b">Self-Employed Individual</label><br>
+              <input type="radio" id="c" name="source" value="NRI Applicant">
+              <label for="c">NRI Applicant</label><br>
+              <input type="radio" id="d" name="source" value="Pensioners">
+              <label for="d">Pensioners</label><br>
             </div>
 
 
