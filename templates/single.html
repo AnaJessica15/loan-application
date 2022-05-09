@@ -80,8 +80,9 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="form-control-label" for="input-address">Title :</label>
-                                        <label class="form-control-label" for="input-address">{{result["Name"]}}</label>
+                                        <label class="form-control-label" for="input-address">Loan Amount Required</label>
+                                        <input id="input-address" class="form-control form-control-alternative"  id="editor" value="{{result["Name"]}}">
+                                     
                                         
                                     </div>
                                 </div>
@@ -91,8 +92,9 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label class="form-control-label"
-                                            for="input-address">Description :</label>
-                                            <textarea name="desc" id="editor"> {{result["Loan_amount"]}}</textarea>
+                                            for="input-address">Interest Rate</label>
+                                            <input id="input-address" class="form-control form-control-alternative"  id="editor" value="{{result["Loan_amount"]}}">
+                                        
                                             
                                     </div>
                                 </div>
@@ -102,8 +104,9 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label class="form-control-label"
-                                            for="input-address">Description :</label>
-                                            <textarea name="desc" id="editor"> {{result["Tenure"]}}</textarea>
+                                            for="input-address">Tenure</label>
+                                            <input id="input-address" class="form-control form-control-alternative"  id="editor" value="{{result["Tenure"]}}">
+                                        
                                             
                                     </div>
                                 </div>
@@ -155,7 +158,13 @@
                 application: "argon-dashboard-free"
             });
     </script>
-
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 
 </body>
 

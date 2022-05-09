@@ -13,9 +13,10 @@ load_dotenv()
 
 # cluster = MongoClient(os.environ.get('MONGO_URI'))
 cluster = MongoClient("mongodb+srv://aj_15:6385715202@cluster0.pdcrn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-db = cluster["Loan_Customers_Info"]
-col  = db["Details"]
-col1 = db["Requests"]
+db1 = cluster["Loan_Customers_Info"]
+# db2 = cluster["Loan_Requests_Info"]
+col  = db1["Details"]
+col1 = db1["Requests"]
 
 
 app = Flask(__name__)
@@ -200,13 +201,14 @@ def apply_form():
 
         my_req ["Name"]                  = name
         my_req ["Loan_amount"]           = loan_amount
-        my_req ["Tenure"]               = tenure 
+        my_req ["Tenure"]                = tenure 
         my_req ["Rate"]                  = rate
  
 
-        requests(my_req)
+        apply_requests(my_req)
 
-        return render_template('apply.html')
+        return redirect("/view")
+      
     
     return render_template('apply.html')
 
@@ -245,7 +247,7 @@ def upload_details(my_dict):
 
     return x
 
-def requests(my_req):
+def apply_requests(my_req):
 
     x = col1.insert_one(my_req)
 
