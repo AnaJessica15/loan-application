@@ -1,9 +1,3 @@
-- Login & SignUp UI
-
-https://codepen.io/colorlib/pen/rxddKy
-
-https://codepen.io/ehermanson/pen/KwKWEv
-
 Here is a breakup of the various factors that impact the CIBIL Transunion Score:
 
 1. Past Performance: Individuals past performance on their debt obligations is the most important criterion and contributes approximately 30 per cent weightage to the score
@@ -25,3 +19,4 @@ Gold Loan	            Not Required
 # todo:
 
 - multiple files not uploaded in static
+- mongodb sort out
