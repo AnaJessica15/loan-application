@@ -1,31 +1,166 @@
+{% extends "base.html" %}
+{% block title %}Youv'e logged in {% endblock %}
+
+{% block content %}
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        We FUND It
+
+    </title>
+    <!-- Favicon -->
+
+    <link rel="icon" href="static/icon.png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+
+    <link href="{{ url_for('static', filename='js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="{{ url_for('static', filename='css/argon-dashboard.css') }}" rel="stylesheet" />
+
+
+   
+    <script src="https://cdn.ckeditor.com/ckeditor5/32.0.0/classic/ckeditor.js"></script>
 <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+  table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
 
-th {
-    background-color: #dddddd;
-}
+th { 
+	background: rgb(116,102,228); 
+	color: white; 
+	font-weight: bold; 
+	}
 
-/* tr:nth-child(even) {
-  background-color: #dddddd;
-} */
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
 </style>
-</head>
-<body>
+  </head>
 
-  <h2>HTML Table</h2>
+
+
+<body class="">
+
+
+
+    <div class="main-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="index.html">
+                    We FUND It
+
+                </a>
+
+                <!-- Form -->
+
+                <!-- User -->
+
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <!-- Header -->
+        <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+            <div class="container-fluid">
+                <div class="header-body">
+                    <!-- Card stats -->
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt--7">
+            <!-- Form -->
+            <div class="row">
+
+                <div class="col-xl-12 order-xl-1">
+
+                    <div class="card bg-secondary shadow">
+
+                        <div class="card-header bg-white border-0">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h3 class="mb-0">Personal Loan Details</h3>
+                                </div>
+                                <div class="col-4 text-right">
+
+                                </div>
+                            </div>
+                        </div>
+                    
+    <div class="card-body">
+   
 
 {% if c_score < 700 %}
 
@@ -34,9 +169,9 @@ th {
 {% else %}
 <table>
   <tr>
-    <th>
-        Personal Loan Details</th>
-    <th></th>
+    <th> Details</th>
+    <th>Value</th>
+   
    
   </tr>
   <tr>
@@ -71,7 +206,70 @@ th {
 
 
 
+</div>
+</div>
+
+</div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+<div class="row align-items-center justify-content-xl-between">
+    <div class="col-xl-6">
+        <div class="copyright text-center text-xl-left text-muted">
+            &copy; 2022 <a href="#" class="font-weight-bold ml-1" target="_blank">
+                We FUND It
+
+            </a>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+
+        </ul>
+    </div>
+</div>
+</footer>
+</div>
+</div>
+
+<!--   Core   -->
+<script src="{{ url_for('static', filename='js/plugins/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+<!--   Optional JS   -->
+<!--   Argon JS   -->
+<script src="{{ url_for('static', filename='js/argon-dashboard.min.js') }}"></script>
+<script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+<script>
+window.TrackJS &&
+TrackJS.install({
+token: "ee6fab19c5a04ac1a32a645abde4613a",
+application: "argon-dashboard-free"
+});
+</script>
+
 
 </body>
+
 </html>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

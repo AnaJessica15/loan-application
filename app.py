@@ -76,7 +76,7 @@ def index():
 
 @app.route("/login", methods=["POST", "GET"])
 def login():
-    message = 'Please login to your account'
+    message = 'LOGIN IN '
     if "email" in session:
         return redirect(url_for("logged_in"))
 

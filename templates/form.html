@@ -1,14 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Youv'e logged in {% endblock %}
+
+{% block content %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-        PRODUCT INFO
+        We FUND It
+
     </title>
     <!-- Favicon -->
 
-    <link href="{{ url_for('static', filename='img/brand/favicon.png') }}" rel="icon" type="image/png">
+    <link rel="icon" href="static/icon.png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Icons -->
@@ -22,7 +29,11 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/32.0.0/classic/ckeditor.js"></script>
 </head>
 
+
+
 <body class="">
+
+
 
     <div class="main-content">
         <!-- Navbar -->
@@ -30,11 +41,9 @@
             <div class="container-fluid">
                 <!-- Brand -->
                 <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="index.html">
-                    PRODUCT INFO
+                    We FUND It
+
                 </a>
-
-<p>Hello You have Logged in as {{ email }}</p>
-
 
                 <!-- Form -->
 
@@ -79,7 +88,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              <label class="form-control-label" for="input-address">Name</label>
+              <label class="form-control-label" for="input-address">Name *</label>
               <input id="input-address" class="form-control form-control-alternative" name="name" placeholder="Type Here ..." type="text">
             </div>
           </div>
@@ -89,7 +98,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
-                <label class="form-control-label" for="input-address">Profile Photo</label>
+                <label class="form-control-label" for="input-address">Profile Photo *</label>
                 <br><br>
                   
                   <input type="file" name ="photo" ><br>
@@ -101,7 +110,7 @@
           <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label class="form-control-label" for="input-address">Aadhar Card</label>
+                  <label class="form-control-label" for="input-address">Aadhar Card *</label>
                   <br><br>
                   
                     <input type="file" name ="ac" ><br>
@@ -113,7 +122,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label class="form-control-label" for="input-address">Pan Card</label>
+                  <label class="form-control-label" for="input-address">Pan Card *</label>
                   <br><br>
                   
                     <input type="file" name ="pc" ><br>
@@ -125,7 +134,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label class="form-control-label" for="input-address">Monthly Salary Slips:</label>
+                  <label class="form-control-label" for="input-address">Monthly Salary Slips *</label>
                   <br><br>
                   
                     <input type="file" id="files" name="files" multiple><br>
@@ -137,7 +146,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label class="form-control-label" for="input-address">Past Debt (Cleared)</label>
+                  <label class="form-control-label" for="input-address">Past Debt (Cleared) *</label>
             <br><br>
             <input type="radio" id="yes" name="debt" value="Yes">
              <label for="yes">Yes</label><br>
@@ -151,7 +160,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label class="form-control-label" for="input-address">Loan Type</label>
+                  <label class="form-control-label" for="input-address">Loan Type *</label>
             <br><br>
             <input type="radio" id="sec" name="loan" value="Secured">
              <label for="sec">Secured</label><br>
@@ -164,7 +173,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label class="form-control-label" for="input-address">Monthly Income</label>
+                  <label class="form-control-label" for="input-address">Monthly Income *</label>
             <br><br>
             <input type="radio" id="1" name="income" value="Less than 15,000 INR">
             <label for="1">Less than 15,000 INR</label><br>
@@ -179,7 +188,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label class="form-control-label" for="input-address">Primary Source Of Income</label>
+                  <label class="form-control-label" for="input-address">Primary Source Of Income *</label>
             <br><br>
             <input type="radio" id="a" name="source" value="Salaried Employees">
             <label for="a">Salaried Employee</label><br>
@@ -216,7 +225,8 @@
     <div class="col-xl-6">
         <div class="copyright text-center text-xl-left text-muted">
             &copy; 2022 <a href="#" class="font-weight-bold ml-1" target="_blank">
-                PRODUCT INFO
+                We FUND It
+
             </a>
         </div>
     </div>
@@ -249,3 +259,5 @@ application: "argon-dashboard-free"
 </body>
 
 </html>
+
+{% endblock %}
