@@ -40,6 +40,7 @@ Theme: Loan Application
 
 ## To run the application locally
 
+
 ```
 pip install -r requirements.txt
 ```
@@ -48,6 +49,7 @@ pip install -r requirements.txt
 ```
 python app.py!
 ```
+![z1](https://user-images.githubusercontent.com/82106569/167673937-0a945da8-3703-484f-bd18-d0b41b41ef84.png)
 ![h1](https://user-images.githubusercontent.com/82106569/167673212-475f2d05-8ce1-4608-acef-dc9cf23b39ef.png)
 ![h2](https://user-images.githubusercontent.com/82106569/167673276-5bf6078c-82fd-48ad-b1c3-5071a0db581c.png)
 ![h4](https://user-images.githubusercontent.com/82106569/167673305-bdef4500-5cfb-4a16-9df3-d76dc0a22f40.png)
