@@ -38,16 +38,12 @@ Theme: Loan Application
 | imgbbpy|  
 | JS|
 
-## Running
-
-To test the application run the following commands on your terminal:
-
-**Running the application locally:**
-
+## To run the application locally
 
 ```
 pip install -r requirements.txt
 ```
+
 
 ```
 python app.py
