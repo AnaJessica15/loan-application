@@ -51,8 +51,5 @@ python app.py!
 ```
 ![z1](https://user-images.githubusercontent.com/82106569/167673937-0a945da8-3703-484f-bd18-d0b41b41ef84.png)
 ![h1](https://user-images.githubusercontent.com/82106569/167673212-475f2d05-8ce1-4608-acef-dc9cf23b39ef.png)
-![h2](https://user-images.githubusercontent.com/82106569/167673276-5bf6078c-82fd-48ad-b1c3-5071a0db581c.png)
-![h4](https://user-images.githubusercontent.com/82106569/167673305-bdef4500-5cfb-4a16-9df3-d76dc0a22f40.png)
-![h5](https://user-images.githubusercontent.com/82106569/167673387-066848ef-689f-4def-b65b-ae63ed922bd6.png)
-![h6](https://user-images.githubusercontent.com/82106569/167673419-7cba6b84-ba85-47de-a08c-920187f41b01.png)
-![h8](https://user-images.githubusercontent.com/82106569/167673454-2d30fafc-9869-4992-81b9-e129c20d4f4b.png)
+
+![z2](https://user-images.githubusercontent.com/82106569/167674303-aa0376e2-67e5-4528-b839-4bdacf5c67d1.png)
