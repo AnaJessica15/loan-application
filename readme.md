@@ -54,7 +54,7 @@ Article Topics:
     - Maching Learning (Intro)
     - Deep Learning(Intro)
 
-## Technology Stack
+# Technology Stack
 
 | Technology  | 
 |-------------|
@@ -66,7 +66,7 @@ Article Topics:
 | imgbbpy|  
 | JS|
 
-## Running
+# Running
 
 To test the application run the following commands on your terminal:
 
