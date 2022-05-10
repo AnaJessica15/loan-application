@@ -15,7 +15,7 @@ env:
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: pip install -r requirements.txt
   BuildCommand: python app.py
-  Output: ./index.html
+  Output: ./templates/index.html
 
 jobs:
   build:
