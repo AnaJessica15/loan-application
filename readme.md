@@ -1,7 +1,9 @@
 # We FUND It
 
 Flipr Hackathon XII
+
 Full Stack Web Development Task
+
 Theme: Loan Application
 
 ## Features
