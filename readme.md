@@ -47,9 +47,19 @@ pip install -r requirements.txt
 
 
 ```
-python app.py!
+python app.py
+
 ```
 ![z1](https://user-images.githubusercontent.com/82106569/167673937-0a945da8-3703-484f-bd18-d0b41b41ef84.png)
-![h1](https://user-images.githubusercontent.com/82106569/167673212-475f2d05-8ce1-4608-acef-dc9cf23b39ef.png)
 
-![z2](https://user-images.githubusercontent.com/82106569/167674303-aa0376e2-67e5-4528-b839-4bdacf5c67d1.png)
+![h2](https://user-images.githubusercontent.com/82106569/167674556-efe5d9d3-71bc-458a-a13d-aeaff84edad4.png)
+
+![z2](https://user-images.githubusercontent.com/82106569/167675226-f604ba77-0fa0-4e1b-9eeb-55fa29396c21.png)
+
+![z3](https://user-images.githubusercontent.com/82106569/167675251-db8c8be6-024c-47da-ac9f-3ef40c7b21cd.png)
+
+![z5](https://user-images.githubusercontent.com/82106569/167675267-1c468c94-7f0b-479f-a072-e8c5963b50fe.png)
+
+![z6](https://user-images.githubusercontent.com/82106569/167675278-12faa80e-553e-4ec1-9f8c-cd26695bfb21.png)
+
+![z7](https://user-images.githubusercontent.com/82106569/167675292-06157196-cdbd-479f-9ba7-87eac8f78c97.png)
