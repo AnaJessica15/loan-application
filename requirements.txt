@@ -11,4 +11,5 @@ Werkzeug==1.0.1
 imgbbpy
 bcrypt
 markupsafe==2.0.1
+itsdangerous==2.0.1
 
