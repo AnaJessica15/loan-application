@@ -12,7 +12,7 @@ from pymongo import MongoClient
 load_dotenv()
 
 cluster = MongoClient(os.environ.get('MONGO_URI'))
-cluster = MongoClient("mongodb+srv://aj_15:6385715202@cluster0.pdcrn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+cluster = MongoClient("mongodb+srv://aj_15:anajessica@cluster0.pdcrn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db1 = cluster["Loan_Customers_Info"]
 # db2 = cluster["Loan_Requests_Info"]
 col  = db1["Details"]
@@ -28,7 +28,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_PATH
 app.secret_key = "testing"
 #connoct to your Mongo DB database
 
-client = pymongo.MongoClient("mongodb+srv://aj_15:6385715202@cluster0.pdcrn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://aj_15:anajessica@cluster0.pdcrn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 client = pymongo.MongoClient(os.environ.get('MONGO_URI'))
 
 #get the database name
