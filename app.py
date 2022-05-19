@@ -11,7 +11,7 @@ from pymongo import MongoClient
 
 load_dotenv()
 
-cluster = MongoClient(os.environ.get('MONGO_URI'))
+# cluster = MongoClient(os.environ.get('MONGO_URI'))
 cluster = MongoClient("mongodb+srv://AJ_15:ANAJESSICA@cluster0.7ylpe.mongodb.net/?retryWrites=true&w=majority")
 db1 = cluster["Loan_Customers_Info"]
 # db2 = cluster["Loan_Requests_Info"]
@@ -29,7 +29,7 @@ app.secret_key = "testing"
 #connoct to your Mongo DB database
 
 client = pymongo.MongoClient("mongodb+srv://AJ_15:ANAJESSICA@cluster0.7ylpe.mongodb.net/?retryWrites=true&w=majority")
-client = pymongo.MongoClient(os.environ.get('MONGO_URI'))
+# client = pymongo.MongoClient(os.environ.get('MONGO_URI'))
 
 #get the database name
 db = client.get_database('total_records')
