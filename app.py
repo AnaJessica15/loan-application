@@ -73,7 +73,7 @@ def index():
             new_email = user_data['email']
             #if registered redirect to logged in as the registered user
             return render_template('logged_in.html', email=new_email)
-    return render_template('index.html')
+    return render_template('form.html')
 
 
 
