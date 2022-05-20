@@ -6,6 +6,8 @@ Full Stack Web Development Task
 
 Theme: Loan Application
 
+Deployment: https://we-fund-it.onrender.com
+
 ## Features
 
 - This platform is a C2C (Customer to Customer) personal loan lending platform.
